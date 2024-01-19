@@ -7,7 +7,8 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "test": "lighthouse http://localhost:4321/blog --view --screenEmulation.disabled --quiet --chrome-flags=\"--headless\" --output-path=\"lighthouse/`date +\"%F\"`_`date +\"%I:%M\"`.report.html\"",
+    "test": "unlighthouse --site http://localhost:4321/blog --desktop --output-path=\"lighthouse/`date +\"%F\"`_`date +\"%I:%M\"`.dev\"",
+    "test-prod": "unlighthouse --site https://commandergl.github.io/blog --desktop --output-path=\"lighthouse/`date +\"%F\"`_`date +\"%I:%M\"`.prod\"",
     "clean-lighthouse": "rm -rf lighthouse/*"
   },
   "dependencies": {
@@ -21,6 +22,6 @@
     "typescript": "^5.3.3"
   },
   "devDependencies": {
-    "lighthouse": "^11.4.0"
+    "unlighthouse": "^0.10.4"
   }
 }
