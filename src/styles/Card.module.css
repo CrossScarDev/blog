@@ -1,0 +1,29 @@
+.card {
+    background: #30303d;
+    width: 15rem;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    min-height: 10rem;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.description {
+    font-size: 1.1rem;
+}
+
+.date {
+    position: absolute;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    color: #8a8a97;
+}

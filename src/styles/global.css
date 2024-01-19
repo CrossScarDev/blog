@@ -1,0 +1,32 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    color: #ededed;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    background: #1d1d27;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    padding: 2rem;
+    width: 50vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    background: #20202d;
+    margin-top: 3.5rem;
+}
+
+main > h1 {
+    margin-bottom: 1rem;
+}

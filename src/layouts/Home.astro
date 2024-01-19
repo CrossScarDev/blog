@@ -1,0 +1,30 @@
+---
+import '@fontsource-variable/inter';
+import '../styles/global.css';
+import Navbar from '../components/Navbar.astro';
+
+interface Props {
+	title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="description" content="CrossScar's Blog" />
+		<meta name="viewport" content="width=device-width" />
+		<meta name="generator" content={Astro.generator} />
+		<link rel="icon" type="image/png" href="/blog/logo.png" />
+		<link rel="sitemap" href="/sitemap-index.xml" />
+		<title>{title} - CrossScar</title>
+	</head>
+	<body>
+		<Navbar />
+		<main>
+			<slot />
+		</main>
+	</body>
+</html>

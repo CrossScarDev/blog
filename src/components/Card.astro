@@ -1,0 +1,18 @@
+---
+import styles from '../styles/Card.module.css';
+
+interface Props {
+    title: string;
+    postId: string;
+    description: string;
+    date: string;
+}
+
+const { title, postId, description, date } = Astro.props;
+---
+
+<a class={styles.card} href={`/blog/posts/${postId}`}>
+    <span class={styles.title}>{title}</span>
+    <span class={styles.description}>{description}</span>
+    <span class={styles.date}>{date}</span>
+</a>

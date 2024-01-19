@@ -1,0 +1,17 @@
+---
+import '../styles/index.css';
+import Home from '../layouts/Home.astro';
+import Card from '../components/Card.astro';
+import { getCollection } from 'astro:content';
+
+const entries = await getCollection('posts');
+---
+
+<Home title="Home">
+	<h1>Posts</h1>
+	<div class="grid">
+		{entries.map(entry => (
+			<Card title={entry.data.title} postId={entry.slug} description={entry.data.description} date={entry.data.date} />
+		))}
+	</div>
+</Home>
