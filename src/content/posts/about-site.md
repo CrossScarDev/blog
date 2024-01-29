@@ -1,7 +1,7 @@
 ---
-title: About This Site
+title: About this site
 description: A blog post explaining exactly how this website was made!
-date: "2024-01-19"
+date: 2024-01-19
 ---
 
 In this blog post I will be explaining how this website was made.

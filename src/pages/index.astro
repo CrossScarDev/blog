@@ -5,6 +5,9 @@ import Card from '../components/Card.astro';
 import { getCollection } from 'astro:content';
 
 const entries = await getCollection('posts');
+entries.sort((a, b) => {
+    return b.data.date - a.data.date;
+});
 ---
 
 <Home title="Home">
