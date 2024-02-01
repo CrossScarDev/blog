@@ -1,5 +1,4 @@
 import { defineConfig } from 'astro/config';
-import houston from './houston.json';
 import sitemap from "@astrojs/sitemap";
 import rehypeExternalLinks from 'rehype-external-links';
 
@@ -12,7 +11,7 @@ export default defineConfig({
   },
   markdown: {
     shikiConfig: {
-      theme: houston
+      theme: 'one-dark-pro'
     },
     rehypePlugins: [[ rehypeExternalLinks, { target: '_blank' }]]
   },
