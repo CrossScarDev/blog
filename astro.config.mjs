@@ -1,6 +1,7 @@
 import { defineConfig } from 'astro/config';
 import sitemap from "@astrojs/sitemap";
 import rehypeExternalLinks from 'rehype-external-links';
+import ctpMocha from '@catppuccin/vscode/themes/mocha.json';
 
 // https://astro.build/config
 export default defineConfig({
@@ -11,7 +12,7 @@ export default defineConfig({
   },
   markdown: {
     shikiConfig: {
-      theme: 'one-dark-pro'
+      theme: ctpMocha
     },
     rehypePlugins: [[ rehypeExternalLinks, { target: '_blank' }]]
   },

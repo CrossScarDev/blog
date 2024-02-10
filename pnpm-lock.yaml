@@ -11,6 +11,9 @@ dependencies:
   '@astrojs/sitemap':
     specifier: ^3.0.5
     version: 3.0.5
+  '@catppuccin/vscode':
+    specifier: ^3.11.1
+    version: 3.11.1
   '@fontsource-variable/inter':
     specifier: ^5.0.16
     version: 5.0.16
@@ -367,6 +370,10 @@ packages:
       '@babel/helper-string-parser': 7.23.4
       '@babel/helper-validator-identifier': 7.22.20
       to-fast-properties: 2.0.0
+
+  /@catppuccin/vscode@3.11.1:
+    resolution: {integrity: sha512-xuYqflcimQoWcX7c4Cug6KM7tX4NjVN770+aXZwUxLnP72JB1ItVAQlaV/Vimx6CxS8Aa19T8r6gorxqbEz//g==}
+    dev: false
 
   /@emmetio/abbreviation@2.3.3:
     resolution: {integrity: sha512-mgv58UrU3rh4YgbE/TzgLQwJ3pFsHHhCLqY20aJq+9comytTXUDNGG/SMtSeMJdkpxgXSXunBGLD8Boka3JyVA==}
