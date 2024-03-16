@@ -14,5 +14,5 @@ const { title, postId, description, date } = Astro.props;
 <a class={styles.card} href={`/blog/posts/${postId}`}>
     <span class={styles.title}>{title}</span>
     <span class={styles.description}>{description}</span>
-    <span class={styles.date}>{date.getFullYear()}-{(date.getMonth() + 1).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}-{(date.getDate() + 1).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}</span>
+    <span class={styles.date}>Last Updated: {date.getFullYear()}-{(date.getMonth() + 1).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}-{(date.getDate() + 1).toLocaleString('en-US', { minimumIntegerDigits: 2, useGrouping: false })}</span>
 </a>
