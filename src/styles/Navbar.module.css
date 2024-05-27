@@ -1,33 +1,31 @@
+@import "@catppuccin/palette/css/catppuccin.css";
+
 .nav {
-    display: flex;
-    background: #23232d;
-    width: 100vw;
-    height: 3.5rem;
-    align-items: center;
-    flex-direction: row;
-    gap: 1rem;
-    position: fixed;
+  display: flex;
+  background: var(--ctp-mocha-mantle);
+  width: 100vw;
+  height: 3.5rem;
+  align-items: center;
+  flex-direction: row;
+  gap: 1rem;
+  position: fixed;
 }
 
 .title {
-    font-size: 1.25rem;
-    margin-left: 1rem;
-    text-decoration: none;
-    display: flex;
-    align-items: center;
-    gap: 0.75rem;
-}
-
-.title:hover {
-    color: #333;
+  font-size: 1.25rem;
+  margin-left: 1rem;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
 }
 
 .title > img {
-    aspect-ratio: 1;
-    height: 2.5rem;
-    border-radius: 0.15rem;
+  aspect-ratio: 1;
+  height: 2.5rem;
+  border-radius: 0.15rem;
 }
 
 .title > span {
-    font-family: 'Quicksand';
+  font-family: 'Quicksand';
 }

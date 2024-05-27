@@ -4,11 +4,12 @@ import '@fontsource-variable/jetbrains-mono';
 import '../styles/global.css';
 import '../styles/Post.css';
 import Navbar from '../components/Navbar.astro';
+import Giscus from '@giscus/vue';
 
 interface Props {
 	frontmatter: {
-        title: string;
-    }
+    title: string;
+  }
 }
 
 const { title } = Astro.props.frontmatter;
@@ -28,8 +29,23 @@ const { title } = Astro.props.frontmatter;
 	<body>
 		<Navbar />
 		<main>
-            <h1>{title}</h1>
-            <slot />
-        </main>
+      <h1>{title}</h1>
+      <slot />
+      <Giscus
+        repo="CommanderGL/blog"
+        repoId="R_kgDOLHILUQ"
+        category="General"
+        categoryId="DIC_kwDOLHILUc4CfpDC"
+        mapping="pathname"
+        strict="1"
+        reactionsEnabled="1"
+        emitMetadata="0"
+        inputPosition="top"
+        theme="https://giscus.catppuccin.com/themes/mocha.css"
+        lang="en"
+        loading="lazy"
+        client:only="vue"
+      />
+    </main>
 	</body>
 </html>

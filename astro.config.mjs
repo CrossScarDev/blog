@@ -3,6 +3,8 @@ import sitemap from "@astrojs/sitemap";
 import rehypeExternalLinks from 'rehype-external-links';
 import ctpMocha from '@catppuccin/vscode/themes/mocha.json';
 
+import vue from "@astrojs/vue";
+
 // https://astro.build/config
 export default defineConfig({
   site: 'https://commandergl.github.io/',
@@ -14,7 +16,9 @@ export default defineConfig({
     shikiConfig: {
       theme: ctpMocha
     },
-    rehypePlugins: [[ rehypeExternalLinks, { target: '_blank' }]]
+    rehypePlugins: [[rehypeExternalLinks, {
+      target: '_blank'
+    }]]
   },
-  integrations: [sitemap()]
+  integrations: [sitemap(), vue()]
 });

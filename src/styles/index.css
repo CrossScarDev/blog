@@ -1,12 +1,12 @@
 .grid {
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: repeat(auto-fill, 18rem);
-    justify-content: center;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fill, 18rem);
+  justify-content: center;
 }
 
 h1 {
-    text-align: center;
-    font-family: 'Inter', Arial, Helvetica, sans-serif;
-    font-size: 2.25rem;
+  text-align: center;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  font-size: 2.25rem;
 }
