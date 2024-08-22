@@ -7,7 +7,7 @@ import vue from "@astrojs/vue";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://commandergl.github.io/',
+  site: 'https://crossscardev.github.io/',
   base: "/blog",
   server: {
     host: true
